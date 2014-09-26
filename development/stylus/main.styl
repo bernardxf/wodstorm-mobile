@@ -2,7 +2,7 @@
 
 // RESET
 *
-	color #444
+	color #fff
 	font-family exo_2regular
 	margin 0px
 	padding 0px
@@ -20,7 +20,10 @@ button
 strong
 	font-family exo_2bold
 .tela
-	background-image linear-gradient(rgb(255, 255, 255) 0%, rgb(238, 238, 238) 100%)
+	background-image -webkit-gradient(linear, left 0%, left 100%, from(#3f3f3f), to(#222222))
+	background-image -webkit-linear-gradient(top, #3f3f3f, 0%, #222222, 100%)
+	background-image -moz-linear-gradient(top, #3f3f3f 0%, #222222 100%)
+	background-image linear-gradient(to bottom, #3f3f3f 0%, #222222 100%)
 	border 1px solid #000
 	color #FFF
 	display block
@@ -114,11 +117,6 @@ p
 .vermelho .mini-btn
 	border 1px solid #c0392b
 	border-bottom 3px solid #c0392b
-.bg-cinza
-	background-image -webkit-gradient(linear, left 0%, left 100%, from(#3f3f3f), to(#222222))
-	background-image -webkit-linear-gradient(top, #3f3f3f, 0%, #222222, 100%)
-	background-image -moz-linear-gradient(top, #3f3f3f 0%, #222222 100%)
-	background-image linear-gradient(to bottom, #3f3f3f 0%, #222222 100%)
 
 // POPUP
 // .bg-popup
@@ -143,6 +141,8 @@ p
 // CONTENT
 .content
 	display block
+	height 100%
+	overflow auto
 	position relative
 // LOGO
 .logo
@@ -247,11 +247,13 @@ ul li
 	padding 5px
 ul li:first-child
 	border none
+
 // PERSONAL RECORDS
 .pr
 	font-family exo_2bold
 	font-size 40px
 	text-align center
+
 //WOD TIME - FOR TIME
 .timer
 	font-family exo_2bold
@@ -272,7 +274,12 @@ ul li:first-child
 	position relative
 	bottom -87px
 	color #fff
-//COLORAÇÃO DA LETRA BARNCA
-.color-white
-	color #fff
 
+// PERFIL
+.foto
+	border 2px solid #fff
+	border-radius 50%
+	float left
+	height 80px
+	margin 15px 15px 0 0
+	width 80px
