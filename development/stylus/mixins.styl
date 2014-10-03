@@ -1,0 +1,22 @@
+// MIXINS
+vendor(prop, args)
+  -webkit-{prop} args
+  -moz-{prop} args
+  -ms-{prop} args
+  -o-{prop} args
+  {prop} args
+
+transform()
+	vendor('transform', arguments)
+animation()
+	vendor('animation', arguments)
+transition()
+	vendor('transition', arguments)
+touch-callout()
+	vendor('touch-callout', arguments)
+text-size-adjust()
+	vendor('text-size-adjust', arguments)
+tap-highlight-color()
+	vendor('tap-highlight-color', arguments)
+user-select()
+	vendor('user-select', arguments)
