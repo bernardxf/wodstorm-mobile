@@ -53,6 +53,11 @@ h1, h2, h3, h4
 	margin 10px 0
 	text-align center
 
+select, select option
+	background none
+	border none
+	font-size 16px
+
 // FORMULARIOS
 form
 	display block
@@ -160,19 +165,10 @@ p
 	left 0
 	position absolute
 	top 0
-	width 260px 
+	width 280px 
 	h4
 		color #E7412D
 		font-size 12px
-	.foto
-		background url(../images/froning.jpg) 0 0 no-repeat
-		background-size cover
-		border 3px solid #E7412D
-		border-radius 50%
-		display block
-		height 100px
-		margin 15px auto
-		width 100px
 	h2
 		color #E7412D
 	ul li
@@ -180,7 +176,7 @@ p
 		color #E7412D
 		height 20px
 		line-height 20px
-		padding 8px 0
+		padding 10px 0
 		i
 			background #fff
 			display block
@@ -190,6 +186,15 @@ p
 			width 20px
 	ul li:hover
 		background #222
+.foto
+	background url(../images/froning.jpg) 0 0 no-repeat
+	background-size cover
+	border 3px solid #E7412D
+	border-radius 50%
+	display block
+	height 100px
+	margin 15px auto
+	width 100px
 .menu
 	display inline-block
 	height 25px
@@ -246,7 +251,7 @@ p
 	-webkit-transform rotate(-45deg)
 	-webkit-transition-delay 0, .2s
 .active
-	transform translate3d(260px,0,0)
+	transform translate3d(280px,0,0)
 
 // CONTENT
 .content
@@ -347,9 +352,13 @@ form.login button
 	right 10px
 
 // LISTA
-ul
+ul, ol
 	display block
-ul li
+ol
+	counter-reset li-counter
+	list-style-type none;
+	list-style-type decimal !ie
+ul li, ol li
 	color #fff
 	//background #3f3f3f
 	linear-gradient(to bottom,#3f3f3f 0%,#222 100%);
@@ -357,7 +366,28 @@ ul li
 	display block
 	font-size 16px
 	padding 5px
-ul li:first-child
+ol li
+	border none
+	display list-item
+	padding-left 35px
+	position relative
+ol li:before
+	background-color #f1c40f
+	border 1px solid #f39c12
+	border-radius 50%
+	color #fff
+	content counter(li-counter)
+	counter-increment li-counter
+	font-size 14px
+	font-weight bold
+	height 20px
+	left 5px
+	line-height 20px
+	position absolute
+	text-align center
+	top 3px
+	width 20px
+ul li:first-child, ol li:first-child
 	border none
 
 // PERSONAL RECORDS
@@ -365,6 +395,9 @@ ul li:first-child
 	font-family exo_2bold
 	font-size 40px
 	text-align center
+
+// PERFIL
+
 
 //WOD TIME - FOR TIME
 .timer
@@ -386,3 +419,9 @@ ul li:first-child
 	position relative
 	bottom -87px
 	color #fff
+
+// PRESENCA
+form.pres label
+	display inline-block
+	font-weight bold
+	width 65px
