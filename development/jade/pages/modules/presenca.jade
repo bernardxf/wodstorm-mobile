@@ -1,14 +1,14 @@
-h2.titulo.amarelo 
-	.mini-btn.btn-l <
+h2.titulo.verde 
+	.btn-l <
 	| Presença
 .content
 	form.pres(id="", method="", action="")
 		p
 			label Box
-			| Crossfit BH
+			input(type="text", name="box", placeholder="CrossfitBH")
 		p
 			label Data
-			| 29/03/2014 - Qua
+			input(type="date")
 		p
 			label Horário
 			select
@@ -20,7 +20,7 @@ h2.titulo.amarelo
 				option 12:00
 				option 18:00
 				option 19:00
-		button.btn.amarelo Enviar
+		button.btn.verde Enviar
 	h4 Presentes
 	ol
 		li Bernard Faria

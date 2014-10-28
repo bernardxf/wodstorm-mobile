@@ -21,24 +21,18 @@ button
 strong
 	font-family exo_2bold
 .tela
-	background-image -webkit-gradient(linear, left 0%, left 100%, from(#3f3f3f), to(#222222))
-	background-image -webkit-linear-gradient(top, #3f3f3f, 0%, #222222, 100%)
-	background-image -moz-linear-gradient(top, #3f3f3f 0%, #222222 100%)
-	background-image linear-gradient(to bottom, #3f3f3f 0%, #222222 100%)
+	background-color #191919
 	border 1px solid #000
 	color #FFF
 	display block
 	float left
 	height 430px
-	margin 0 5px 0 0
+	margin 5px 0 0 5px
 	overflow hidden
 	position relative
 	width 320px
 #container
-	background-image -webkit-gradient(linear, left 0%, left 100%, from(#3f3f3f), to(#222222))
-	background-image -webkit-linear-gradient(top, #3f3f3f, 0%, #222222, 100%)
-	background-image -moz-linear-gradient(top, #3f3f3f 0%, #222222 100%)
-	background-image linear-gradient(to bottom, #3f3f3f 0%, #222222 100%)
+	background-color #191919
 	display block
 	position relative
 	transition transform 0.3s ease-out
@@ -60,37 +54,57 @@ select, select option
 
 // FORMULARIOS
 form
-	display block
-	padding 10px
-input[type="text"], input[type="password"], input[type="email"], input[type="date"], textarea
-	background #fff
-	border 1px solid #95a5a6
-	border-bottom 2px solid #95a5a6
-	border-radius 4px
-	color #2c3e50
-	display block
-	font-size 13px
-	margin 5px auto
-	padding 5px 8px
-	width 234px
-p
-	display block
-	padding 10px
-
+	margin 0 auto
+	padding 0
+	width 90%
+	p
+		display block
+		margin 0 0 5px 0
+		padding 0
+		label
+			background-color #1E1E1E
+			border-radius 4px 0 0 4px
+			display block
+			float left
+			font-size 12px
+			height 50px
+			line-height 50px
+			padding 0 10px
+			width 50px
+		input[type="text"]
+		input[type="password"]
+		input[type="email"]
+		input[type="date"]
+		textarea
+		select
+			background-color #1E1E1E
+			border none
+			border-radius 0 4px 4px 0
+			color #666
+			display block
+			font-size 15px
+			height 50px
+			margin 0
+			padding 0 5px 0 0
+			width 213px
+	p.textarea label
+		height 190px
+	p.textarea textarea
+		padding-top 5px
+		height 185px
 // BOTOES
 .btn
-	background #34495e
-	border-bottom 3px solid #2c3e50
+	background #353535
 	border-radius 4px
 	color #fff
 	display block
-	font-size 13px
-	height 40px
-	line-heigh 40px
+	border none
+	font-size 15px
+	height 50px
 	margin 5px auto
 	text-align center
 	text-transform uppercase
-	width 250px
+	width 288px
 .mid-position
 	position relative;
 	bottom -100px;
@@ -101,41 +115,17 @@ p
 
 // CORES
 .verde
-	background #2ecc71
-	border-bottom 3px solid #27ae60
-.verde .mini-btn
-	border 1px solid #27ae60
-	border-bottom 3px solid #27ae60
+	background #9ED560
 .azul
 	background #3498db
-	border-bottom 3px solid #2980b9
-.azul .mini-btn
-	border 1px solid #2980b9
-	border-bottom 3px solid #2980b9
 .roxo
 	background #9b59b6
-	border-bottom 3px solid #8e44ad
-.roxo .mini-btn
-	border 1px solid #8e44ad
-	border-bottom 3px solid #8e44ad
 .amarelo
 	background #f1c40f
-	border-bottom 3px solid #f39c12
-.amarelo .mini-btn
-	border 1px solid #f39c12
-	border-bottom 3px solid #f39c12
 .laranja
 	background #e67e22
-	border-bottom 3px solid #d35400
-.laranja .mini-btn
-	border 1px solid #d35400
-	border-bottom 3px solid #d35400
 .vermelho
 	background #e74c3c
-	border-bottom 3px solid #c0392b
-.vermelho .mini-btn
-	border 1px solid #c0392b
-	border-bottom 3px solid #c0392b
 
 // POPUP
 // .bg-popup
@@ -263,56 +253,40 @@ p
 .logo
 	background url(../images/logo.png) 0 0 no-repeat
 	height 150px
-	margin 25px auto
+	margin 12px auto
 	width 133px
 
 // LOGIN
 form.login
-	background #fff
-	border-radius 4px
-	margin 0 auto
-	padding 10px
-	width 80%
-form.login input
-	background-color #fff
-	border 1px solid #ccc
-	border-radius 4px
-	box-shadow inset 0 1px 1px rgba(0,0,0,0.075)
-	-webkit-box-shadow inset 0 1px 1px rgba(0,0,0,0.075)
-	color #555
-	display block
-	font-size 14px
-	line-height 1.428571429
-	margin-bottom 10px
-	padding: 6px 12px
-	vertical-align middle
-	width 224px
-form.login button
-	background #e5412d
-	border-color #dd301b
+	margin-top 26px
+	button
+		background-color #BC3022
 
 // MENU BOTOES
 .menu-botoes
 	display block
 	text-align center
-.menu-botoes button
-	border-radius 5px
-	color #fff
-	display inline
-	font-size 10px
-	height 90px
-	margin-top 10px
-	padding 10px
-	text-align center
-	text-transform uppercase
-	width 90px
-.menu-botoes button i
-	background #fff
-	border-radius 50%
-	display block
-	height 24px
-	margin 0 auto 10px
-	width 24px
+	button
+		background-color #BC3022
+		border-radius 5px
+		color #fff
+		display inline
+		font-size 10px
+		height 78px
+		margin-top 5px
+		padding 10px
+		text-align center
+		text-transform uppercase
+		width 140px
+		i
+			background #fff
+			border-radius 50%
+			display block
+			height 24px
+			margin 0 auto 10px
+			width 24px
+		&:active
+			background-color #FD5300
 .bottom-position
 	position relative
 	bottom -125px
@@ -331,61 +305,55 @@ form.login button
 	position relative
 	text-align center
 	text-transform uppercase
-.titulo .mini-btn
-	border-radius 5px
-	color #fff
-	display block
-	height 30px
-	line-height 30px
-	position absolute
-	text-align center
-	top 10px
-	width 30px
-.mini-btn-texto
-	font-size 12px
-	letter-spacing normal
-	padding 0 5px
-	width auto !important
-.btn-l
-	left 10px
-.btn-r
-	right 10px
+	.btn-l
+	.btn-r
+		left 10px
+		text-align center
+		position absolute
+		top 0px
+	.btn-r
+		left auto
+		right 10px
 
 // LISTA
 ul, ol
 	display block
+	margin 0 auto
+	padding 0
+	width 90%
 ol
 	counter-reset li-counter
 	list-style-type none;
 	list-style-type decimal !ie
 ul li, ol li
-	color #fff
-	//background #3f3f3f
-	linear-gradient(to bottom,#3f3f3f 0%,#222 100%);
-	border-top 1px solid #bdc3c7 
+	background-color #1E1E1E
+	border-radius 4px
+	color #666
 	display block
-	font-size 16px
-	padding 5px
+	font-size 15px
+	height 32px
+	line-height 32px
+	margin 0 0 2px
+	padding 0 7px
 ol li
 	border none
 	display list-item
 	padding-left 35px
 	position relative
 ol li:before
-	background-color #f1c40f
-	border 1px solid #f39c12
+	background-color #9BD94F
 	border-radius 50%
 	color #fff
 	content counter(li-counter)
 	counter-increment li-counter
-	font-size 14px
+	font-size 11px
 	font-weight bold
 	height 20px
 	left 5px
 	line-height 20px
 	position absolute
 	text-align center
-	top 3px
+	top 6px
 	width 20px
 ul li:first-child, ol li:first-child
 	border none
@@ -421,7 +389,6 @@ ul li:first-child, ol li:first-child
 	color #fff
 
 // PRESENCA
-form.pres label
-	display inline-block
-	font-weight bold
-	width 65px
+form.pres
+	select
+		width 218px
