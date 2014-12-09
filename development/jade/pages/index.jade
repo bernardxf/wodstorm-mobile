@@ -2,7 +2,8 @@
 html
 	head
 		title Wodstorm Mobile
-		meta(name='viewport', content='width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no')
+		meta(name='viewport', content='width=320, user-scalable=no')
+		meta(name="msapplication-tap-highlight", content="no")
 		meta(name='format-detection', content='telephone=no')
 		link(href='../assets/styles/main.css', rel='stylesheet', type='text/css')
 		meta(charset='utf-8')
@@ -29,20 +30,10 @@ html
 		#benchkmark.tela
 			include modules/pr
 		.clear
-		#wod-timer.tela
-			include modules/wod-timer
-		#for-time.tela
-			include modules/for-time
-		#for-time2.tela
-			include modules/for-time2
-		#amrap.tela
-			include modules/amrap
-		#amrap2.tela
-			include modules/amrap2
-		#tabata.tela
-			include modules/tabata
-		#tabata2.tela
-			include modules/tabata2
+		#timer.tela
+			include modules/timer
+		#timer-add.tela
+			include modules/timer-add
 		.clear
 		#menu.tela
 			include menu-lateral

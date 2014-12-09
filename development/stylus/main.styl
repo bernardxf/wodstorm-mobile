@@ -3,7 +3,6 @@
 
 // RESET
 *
-	color #fff
 	font-family exo_2regular
 	margin 0px
 	padding 0px
@@ -34,6 +33,7 @@ strong
 #container
 	background-color #191919
 	display block
+	height 100%
 	position relative
 	transition transform 0.3s ease-out
 .clear
@@ -117,36 +117,41 @@ form
 
 // CORES
 .verde
-	background #9ED560
+	background-color #9ED560
 .azul
-	background #3498db
+	background-color #3498db
 .roxo
-	background #9b59b6
+	background-color #9b59b6
 .amarelo
-	background #f1c40f
+	background-color #f1c40f
 .laranja
-	background #e67e22
+	background-color #e67e22
 .vermelho
-	background #e74c3c
+	background-color #e74c3c
 
 // POPUP
-// .bg-popup
-// 	background rgba(0, 0, 0, .7)
-// 	display block
-// 	height 100%
-// 	left 0
-// 	position absolute
-// 	top 0
-// 	width 100%
-// .popup
-// 	background #fff
-// 	border 1px solid #95a5a6
-// 	border-bottom 2px solid #95a5a6
-// 	border-radius 4px
-// 	display block
-// 	margin 0 auto
-// 	padding 10px
-// 	width 260px
+.bg-popup
+	background rgba(0, 0, 0, .7)
+	display block
+	height 100%
+	left 0
+	position absolute
+	top 0
+	width 100%
+	.popup
+		background #fff
+		border 1px solid #95a5a6
+		border-bottom 2px solid #95a5a6
+		border-radius 4px
+		color #666
+		display block
+		left 50%
+		margin 0 auto
+		padding 10px
+		position absolute
+		top 50%
+		transform translate3d(-50%, -50%, 0)
+		width 260px
 
 // MENU LATERAL
 .menu-lateral
@@ -249,7 +254,7 @@ form
 .content
 	display block
 	height 100%
-	overflow auto
+	// overflow auto
 	position relative
 // LOGO
 .logo
@@ -370,25 +375,35 @@ ul li:first-child, ol li:first-child
 
 
 //WOD TIME - FOR TIME
-.timer
-	font-family exo_2bold
-	font-size 50px
-	text-align center
-	color #fff
-.rep-count
-	font-family exo_2bold
-	font-size 50px
-	text-align center
-	position relative
-	bottom -125px
-	color #fff
-.rep-count-tabata
-	font-family exo_2bold
-	font-size 50px
-	text-align center
-	position relative
-	bottom -87px
-	color #fff
+ul.timer
+	li
+		color #fff
+		display inline-block
+		height auto
+		padding 0
+		width 100%
+		.tit
+			float left
+			font-weight bold
+			padding-left 10px
+		.buttons
+			float right
+			margin 5px 10px 0 0
+			button
+				color #fff
+				margin 0 3px
+				&:before
+					font-size 23px
+		ul.configs
+			float left
+			width 100%
+			li
+				background none
+				color #666
+				float left
+				height auto
+				text-align center
+				width 20%
 
 // PRESENCA
 form.pres
