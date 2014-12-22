@@ -60,7 +60,7 @@ select option
 form
 	margin 0 auto
 	padding 0
-	width 100%
+	width 300px
 	p
 		display block
 		margin 0 0 5px 0
@@ -455,8 +455,42 @@ ul.timer
 				height auto
 				text-align center
 				width 20%
+.rounds
+.reps
+	display block
+	float left
+	font-size 20px
+	margin 15px 0
+	text-align center
+	width 50%
+	span
+		display inline-block
+		font-size 25px
+		padding 0 5px
+.time
+	display block
+	float left
+	font-size 60px
+	margin 55px 0
+	text-align center
+	width 100%
+	&.verde
+		background none
+		color #0f0
+	&.vermelho
+		background none
+		color #f00
+	
 
 // PRESENCA
 form.pres
 	select
 		width 218px
+
+// @media only screen and (max-height: 400px)
+// 	.tela
+// 		height 362px
+	
+// @media only screen and (min-height: 451px)
+// 	.tela
+// 		height 518px
