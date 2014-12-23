@@ -1,4 +1,4 @@
-h2.titulo.verde 
+h2.titulo
 	.mini-btn.btn-l.flaticon-left17
 	| Novo
 .content
@@ -11,9 +11,12 @@ h2.titulo.verde
 			textarea 3 séries, a cada 5' completar.... 400mts de corrida... 12 Burpee Muscle up/Burpee C2B
 		p
 			label Tipo
-			div.radio
+			span
 				input#fitness(type="radio", name="tipo", value="fitness")
 				label(for="fitness") Fitness
 				input#performance(type="radio", name="tipo", value="performance")
 				label(for="performance") Performance
-		button.btn.verde Salvar
+		p.textarea
+			label Result
+			textarea 105 reps
+		button.btn.btn2 Salvar
