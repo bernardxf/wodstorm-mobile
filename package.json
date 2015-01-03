@@ -1,7 +1,7 @@
 {
-  "name": "TrancaON",
+  "name": "Wodstorm-mobile",
   "version": "0.1.0",
-  "description": "Jogo do TrancaON",
+  "description": "Versão mobile do wodstorm",
   "devDependencies": {
     "grunt": "~0.4.1",
     "matchdep": "~0.1.2",

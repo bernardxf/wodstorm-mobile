@@ -140,6 +140,11 @@ form
 				font-size 44px
 				line-height 12px
 				text-align center
+		&.duas
+			label
+				height 42px
+				line-height 15px
+				padding-top 8px
 // BOTOES
 .btn
 	background #353535
@@ -165,6 +170,15 @@ form
 .mid-position-tabata
 	position relative;
 	bottom -57px;
+.botoes
+	display block
+	float left
+	text-align center
+	width 100%
+	button
+		display inline
+		width 135px
+		
 
 // POPUP
 .bg-popup
@@ -420,6 +434,42 @@ ol
 	text-align center
 
 // PERFIL
+#perfil
+	.foto
+		background url(../images/froning.jpg) 0 0 no-repeat
+		background-size cover
+		border 3px solid #fff
+		border-radius 50%
+		display block
+		height 100px
+		margin 15px auto
+		width 100px
+
+// Alterar foto
+#alterar-foto
+	.fotos
+		display block
+		height 236px
+		position relative
+		.seta
+			display block
+			left 0
+			position absolute
+			top 75px
+			&:before
+				font-size 50px
+			&.flaticon-arrow73
+				left auto
+				right 0
+		.foto
+			background url(../images/froning.jpg) 0 0 no-repeat
+			background-size cover
+			border 3px solid #fff
+			border-radius 50%
+			display block
+			height 200px
+			margin 15px auto
+			width 200px
 
 
 // CRONOMETRO
