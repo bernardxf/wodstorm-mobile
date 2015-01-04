@@ -146,6 +146,10 @@ form
 				line-height 15px
 				padding-top 8px
 // BOTOES
+button
+	&:active
+		transform scale(.98)
+		opacity .8
 .btn
 	background #353535
 	border-radius 4px
@@ -158,9 +162,6 @@ form
 	text-align center
 	text-transform uppercase
 	width 288px
-	&:active
-		transform scale(.98)
-		opacity .8
 	&.btn2
 		// background-color #9ED560
 		background-color #BC3026
@@ -347,8 +348,6 @@ form.login
 			height 24px
 			margin 0 auto 10px
 			width 24px
-		&:active
-			background-color #FD5300
 .bottom-position
 	position relative
 	bottom -125px
@@ -540,10 +539,115 @@ form.pres
 	select
 		width 230px
 
-// @media only screen and (max-height: 400px)
-// 	.tela
-// 		height 362px
+@media only screen and (max-height: 400px)
+	.tela
+		height 362px
+	.logo
+		background-size cover
+		height 120px
+		width 106px
+	.menu-botoes
+		button
+			height 65px
+	.titulo
+		font-size 20px
+		height 40px
+		line-height 40px
+	.btn
+		font-size 13px
+		height 40px
+	form
+		p
+			label
+				height 40px
+				line-height 40px
+			input[type="text"]
+			input[type="password"]
+			input[type="email"]
+			input[type="date"]
+			textarea
+			select
+				font-size 13px
+				height 40px
+			&.textarea label
+				height 75px
+			& textarea
+				height 70px
+			span
+				height 30px
+				padding-top 10px
+			&.duas
+				label
+					height 34px
+					padding-top 6px
+	#adicionar-wod
+		.textarea label
+			height 75px
+		textarea
+			height 70px
+	.time
+		margin 38px 0
 	
-// @media only screen and (min-height: 451px)
-// 	.tela
-// 		height 518px
+@media only screen and (min-height: 451px)
+	.tela
+		height 518px
+	.menu-botoes
+		button
+			font-size 15px
+			height 100px
+			width 150px
+	.titulo
+		height 60px
+		line-height 60px
+	.btn
+		font-size 17px
+		height 60px
+	form
+		p
+			label
+				height 60px
+				line-height 60px
+			input[type="text"]
+			input[type="password"]
+			input[type="email"]
+			input[type="date"]
+			textarea
+			select
+				font-size 17px
+				height 60px
+			&.textarea label
+				height 265px
+			& textarea
+				height 260px
+			span
+				height 40px
+				padding-top 20px
+			&.duas
+				label
+					height 47px
+					padding-top 13px
+	ul
+	ol
+		li
+			font-size 17px
+			height 42px
+			line-height 42px
+			i
+				&:before
+					font-size 20px !important
+	ol
+		li
+			&:before
+				top 11px
+	#adicionar-wod
+		.textarea label
+			height 120px
+		textarea
+			height 115px
+	#perfil
+		.foto
+			height 150px
+			width 150px
+		h3
+			font-size 25px
+			margin 25px 0
