@@ -149,6 +149,7 @@ button
 			
 .voltar
 .novo
+.sair
 	color #fff
 	display block
 	font-family TitilliumWeb-Light
@@ -174,136 +175,54 @@ button
 		left auto
 		right -4px
 		top 3px
+.sair
+	left auto
+	padding 0
+	right 5px
+	&:before
+		display none
 // POPUP
-.bg-popup
-	background rgba(0, 0, 0, .7)
+.blur
+	-webkit-filter blur(3px)
+	-moz-filter blur(3px)
+	-ms-filter blur(3px)
+	-o-filter blur(3px)
+	filter blur(3px)
+.popup
+	background-color #000
 	display block
-	height 100%
-	left 0
-	position absolute
-	top 0
-	width 100%
-	.popup
-		background #fff
-		border 1px solid #95a5a6
-		border-bottom 2px solid #95a5a6
-		border-radius 4px
-		color #666
-		display block
-		left 50%
-		margin 0 auto
-		padding 10px
-		position absolute
-		top 50%
-		transform translate3d(-50%, -50%, 0)
-		width 260px
-
-// MENU LATERAL
-.menu-lateral
-	background #141514
-	box-shadow inset 3px 0px 5px #000
-	display block
-	height 100%
-	left 0
-	position absolute
-	top 0
-	width 280px 
-	h4
-		color #E7412D
-		font-size 12px
-	h2
-		background none
-		color #E7412D
-	dl
-		display block
-		margin 0 auto 20px
-		width 250px
-		dt
-			border-bottom 2px solid #e7412d
-			margin 0 0 10px
-			i
-				float right
-				margin 2px 0 0
-				&:before
-					font-size 15px
-	.foto
-		background url(../images/froning.jpg) 0 0 no-repeat
-		background-size cover
-		border 3px solid #fff
-		border-radius 50%
-		display block
-		height 100px
-		margin 15px auto
-		width 100px
-.menu
-	display inline-block
-	height 25px
-	left 10px
-	position absolute
-	top 10px
-	width 20px
-	z-index 99
-.menu span
+	left 50%
 	margin 0 auto
-	position relative
-	top 11px
-	transition-duration 0s
-	transition-delay .25s
-.menu span:before, .menu span:after
-	content ''
 	position absolute
-.menu span, .menu span:before, .menu span:after
-	background-color #fff
-	border-radius 5px
-	display block
-	height 4px
-	width 20px
-.menu span:before
-	margin-top -9px
-	transition-property margin, transform
-	transition-duration .2s
-	transition-delay .2s, 0  
-	-webkit-transition-property margin, -webkit-transform
-	-webkit-transition-duration .2s
-	-webkit-transition-delay  .2s, 0 
-.menu span:after
-	margin-top 9px
-	transition-property margin, transform
-	transition-duration .2s
-	transition-delay .2s, 0  
-	-webkit-transition-property margin, -webkit-transform
-	-webkit-transition-duration .2s
-	-webkit-transition-delay .2s, 0;
-.menu-active span
-	background-color rgba(0,0,0,0.0)
-	transition-delay .2s
-	-webkit-transition-delay .2s
-.menu-active span:before
-	margin-top 0
-	transform rotate(45deg)
-	transition-delay 0, .2s
-	-webkit-transform rotate(45deg)
-	-webkit-transition-delay 0, .2s
-.menu-active span:after
-	margin-top 0
-	transform rotate(-45deg)
-	transition-delay 0, .2s
-	-webkit-transform rotate(-45deg)
-	-webkit-transition-delay 0, .2s
-.active
-	transform translate3d(280px,0,0)
-
-// CONTENT
-// .content
-// 	display block
-// 	float left
-// 	height 100%
-// 	margin 0 10px
-// 	position relative
-// 	width 300px
-// 	.texto
-// 		display block
-// 		margin-bottom 15px
+	top 50%
+	transform translate3d(-50%, -50%, 0)
+	width 260px
+	.titulo
+		border-bottom 1px solid #2A2A2A
+		display block
+		font-family TitilliumWeb-Bold
+		font-size 16px
+		height 42px
+		line-height 42px
+		text-align center
+	.mensagem
+		color #AAAAAA
+		display block
+		font-family Lato-Light
+		font-size 16px
+		padding 10px
+		text-align center
+	.botoes
+		display block
+		padding 0 10px 10px 10px
+		text-align center
+		width auto
+		button
+			border none
+			height 42px
+			width 110px
+			&:first-child
+				background-color #BE2E19
 	
 // LOGO
 .logo
@@ -333,27 +252,6 @@ form.login
 			position absolute
 			top 17px
 			left 100px	
-
-// MENU BOTOES
-.menu-botoes
-	display block
-	margin 0 auto
-	text-align center
-	width 280px
-	button
-		color #fff
-		display inline
-		font-family TitilliumWeb-Bold
-		float left
-		font-size 15px
-		height 60px
-		line-height 60px
-		margin 0 auto 12px
-		text-align center
-		text-transform uppercase
-		width 136px
-		&:nth-child(2n)
-			margin-left 8px
 .bottom-position
 	position relative
 	bottom -125px
@@ -416,6 +314,46 @@ ol
 			width 15px
 		&:after
 			display none
+			
+// TELA INICIO
+#telaInicio
+	text-align center
+	.btnPerfil
+		background none
+		border 1px solid #666
+		color #666
+		font-size 8px
+		height 16px
+		position absolute
+		right 20px
+		top 10px
+		width 50px
+		&:active
+			background-color #4B4B4B
+			border-color #4B4B4B
+			color #fff
+	.botoes
+		display inline-block
+		margin 0 auto
+		text-align center
+		width 280px
+		button
+			background-color #bc3026
+			border none
+			color #fff
+			display inline
+			font-family TitilliumWeb-Bold
+			font-size 15px
+			height 60px
+			line-height 60px
+			margin 0 auto 12px
+			text-align center
+			text-transform uppercase
+			width 136px
+			&:nth-child(2n)
+				margin-left 4px
+			&:active
+				background-color #E02E15
 
 // PERSONAL RECORDS
 #pr
@@ -709,6 +647,23 @@ ol
 		height 120px
 	textarea
 		height 115px
+	.por
+		background-color #1e1e1e
+		button
+			background none
+			border 1px solid #363636
+			color #363636
+			display inline-block
+			height 40px
+			margin 5px 0
+			width 100px
+			&:nth-child(2n)
+				margin-left 7px
+			&:active
+			&.active
+				background-color #2A2A2A
+				border-color #fff
+				color #fff
 
 // PRESENCA
 #presenca
@@ -784,110 +739,3 @@ ol
 				display inline-block
 				font-family Lato-Light
 				font-size 18px
-
-// @media only screen and (max-height: 400px)
-// 	.tela
-// 		height 362px
-// 	.logo
-// 		background-size cover
-// 		height 120px
-// 		width 106px
-// 	.menu-botoes
-// 		button
-// 			height 65px
-// 	.titulo
-// 		font-size 20px
-// 		height 40px
-// 		line-height 40px
-// 	.btn
-// 		font-size 13px
-// 		height 40px
-// 	form
-// 		p
-// 			label
-// 				height 40px
-// 				line-height 40px
-// 			input[type="text"]
-// 			input[type="password"]
-// 			input[type="email"]
-// 			input[type="date"]
-// 			textarea
-// 			select
-// 				font-size 13px
-// 				height 40px
-// 			&.textarea label
-// 				height 75px
-// 			& textarea
-// 				height 70px
-// 			&.duas
-// 				label
-// 					height 34px
-// 					padding-top 6px
-// 	#adicionar-wod
-// 		.textarea label
-// 			height 105px
-// 		textarea
-// 			height 100px
-// 	.time
-// 		margin 38px 0
-	
-// @media only screen and (min-height: 451px)
-// 	.tela
-// 		height 518px
-// 	.menu-botoes
-// 		button
-// 			font-size 15px
-// 			height 100px
-// 			width 150px
-// 	.titulo
-// 		height 60px
-// 		line-height 60px
-// 	.btn
-// 		font-size 17px
-// 		height 60px
-// 	form
-// 		p
-// 			label
-// 				height 60px
-// 				line-height 60px
-// 			input[type="text"]
-// 			input[type="password"]
-// 			input[type="email"]
-// 			input[type="date"]
-// 			textarea
-// 			select
-// 				font-size 17px
-// 				height 60px
-// 			&.textarea label
-// 				height 265px
-// 			& textarea
-// 				height 260px
-// 			&.duas
-// 				label
-// 					height 47px
-// 					padding-top 13px
-// 	ul
-// 	ol
-// 		li
-// 			font-size 17px
-// 			height 42px
-// 			line-height 42px
-// 			i
-// 				&:before
-// 					font-size 20px !important
-// 	ol
-// 		li
-// 			&:before
-// 				top 11px
-// 	#adicionar-wod
-// 		.textarea label
-// 			height 150px
-// 		textarea
-// 			height 145px
-// 	#perfil
-// 		.foto
-// 			height 150px
-// 			width 150px
-// 		h3
-// 			font-size 25px
-// 			margin 25px 0
