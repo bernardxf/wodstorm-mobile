@@ -2,62 +2,17 @@
 html
 	head
 		title Wodstorm Mobile
-		//- meta(name='viewport', content='width=320, user-scalable=no')
-		//- meta(name="msapplication-tap-highlight", content="no")
-		//- meta(name='format-detection', content='telephone=no')
+		meta(name='viewport', content='width=320, user-scalable=no')
+		meta(name="msapplication-tap-highlight", content="no")
+		meta(name='format-detection', content='telephone=no')
 		link(href='../assets/styles/main.css', rel='stylesheet', type='text/css')
 		meta(charset='utf-8')
 	body
-		#login.tela
-			include modules/login
-		#inicio.tela
-			include modules/inicio
-		#benchkmark.tela
-			include modules/popup
-		.clear
-		#perfil.tela
-			include modules/perfil
-		#alterar-foto.tela
-			include modules/alterar-foto
-		#alterar-senha.tela
-			include modules/alterar-senha
-		#lista-composicao.tela
-			include modules/lista-composicao
-		#adicionar-composicao.tela
-			include modules/adicionar-composicao
-		.clear
-		#wod.tela
-			include modules/wod
-		#lista-wod.tela
-			include modules/lista-wod
-		#adicionar-wod.tela
-			include modules/adicionar-wod
-		.clear
-		#lista-beckmark.tela
-			include modules/lista-benchmark
-		#adicionar-benchmark.tela
-			include modules/adicionar-benchmark
-		#benchkmark.tela
-			include modules/benchmark
-		#resultado-benchmark.tela
-			include modules/resultado-benchmark
-		.clear
-		#lista-pr.tela
-			include modules/lista-pr
-		#adicionar-pr.tela
-			include modules/adicionar-pr
-		#pr.tela
-			include modules/pr
-		#resultado-pr.tela
-			include modules/resultado-pr
-		.clear
-		#lista-timer.tela
-			include modules/lista-timer
-		#adicionar-timer.tela
-			include modules/adicionar-timer
-		#timer.tela
-			include modules/timer
-		.clear
-		#presenca.tela
-			include modules/presenca
+		#tela
+			#telaRolagem
+				.container.containerEsquerda
+				.container.containerCentro
+				.container.containerDireita
+		script(type="text/javascript", src="../assets/scripts/tela.js")
+		script(type="text/javascript", src="../assets/scripts/ajax.js")
 		script(type="text/javascript", src="../assets/scripts/main.js")

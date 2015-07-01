@@ -22,11 +22,33 @@ button
 	color #FFF
 	display block
 	float left
-	height 480px
-	margin 5px 0 0 5px
+	height 100%
 	overflow hidden
 	position relative
-	width 320px
+	width 100%
+.container
+	width 25%
+	height 100%
+	float left
+	position absolute
+.containerCentro
+	left 25%
+	display inline
+.containerEsquerda
+	left 0
+.containerDireita
+	left 50%
+#telaRolagem
+	background-color #2A2A2A
+	position relative
+	width 400%
+	height: 100%
+	overflow: hidden
+	transform translate3d(-25%,0,0)
+#tela
+	width 100%
+	height 100%
+	overflow hidden
 #login
 #inicio
 #perfil
@@ -64,7 +86,7 @@ select option
 	background none
 	border none
 	font-size 16px
-	
+
 // FORMULARIOS
 form
 	margin 20px auto 0
@@ -146,7 +168,7 @@ button
 		&:active
 			background-color #4B4B4B
 			border-color #4B4B4B
-			
+
 .voltar
 .novo
 .sair
@@ -223,7 +245,7 @@ button
 			width 110px
 			&:first-child
 				background-color #BE2E19
-	
+
 // LOGO
 .logo
 	background url(../images/logo.png) 0 0 no-repeat
@@ -251,7 +273,7 @@ form.login
 			font-size 18px
 			position absolute
 			top 17px
-			left 100px	
+			left 100px
 .bottom-position
 	position relative
 	bottom -125px
@@ -287,7 +309,7 @@ ol
 			right 5px
 			top 0px
 			width 15px
-			
+
 ol
 	counter-reset li-counter
 	list-style-type none;
@@ -314,7 +336,7 @@ ol
 			width 15px
 		&:after
 			display none
-			
+
 // TELA INICIO
 #telaInicio
 	text-align center
@@ -356,7 +378,7 @@ ol
 				background-color #E02E15
 
 // PERSONAL RECORDS
-#pr
+#telaPR
 	.pr
 		border-bottom 1px solid #4A4A4A
 		font-family Lato-Hairline
@@ -472,7 +494,7 @@ ol
 				content '\e604'
 			&.altura:before
 				content '\e602'
-				
+
 
 // Alterar foto
 #alterar-foto
@@ -508,7 +530,7 @@ ol
 			right 15px
 			&:before
 				content '\e603'
-			
+
 	#btnConfirmar
 		padding-left 20px
 		position relative
@@ -528,7 +550,7 @@ ol
 		margin 20px auto 0
 
 // CRONOMETRO
-#lista-timer
+#telaListaTimer
 	ul.timer
 		li
 			color #fff
@@ -588,7 +610,7 @@ ol
 						color #fff
 						font-family Lato-Hairline
 						font-size 21px
-#timer
+#telaTimer
 	.rounds
 	.reps
 	.total
@@ -629,7 +651,7 @@ ol
 			top 14px
 			width 80px
 // WOD
-#wod
+#telaWod
 	h3
 		text-align left
 		margin 10px auto -5px
@@ -642,7 +664,7 @@ ol
 		margin 0 auto
 		padding 10px
 		width 260px
-#adicionar-wod
+#telaNovoWod
 	.textarea label
 		height 120px
 	textarea
@@ -690,7 +712,7 @@ ol
 					margin 0
 
 // BENCHMARK
-#benchkmark
+#telaBenchmark
 	p
 		font-family TitilliumWeb-Light
 		font-size 16px
@@ -739,3 +761,17 @@ ol
 				display inline-block
 				font-family Lato-Light
 				font-size 18px
+
+// ANIMACAO
+.rolagemCentro
+	transform translate3d(-25%, 0, 0) !important
+.rolagemDir
+	transform translate3d(-50%, 0, 0) !important
+	transition-property TRANSFORM_PROP
+	transition-duration 200ms
+	transition-timing-function linear
+.rolagemEsq
+	transform translate3d(0, 0, 0) !important
+	transition-property TRANSFORM_PROP
+	transition-duration 200ms
+	transition-timing-function linear

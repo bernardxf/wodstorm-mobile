@@ -1,11 +1,20 @@
-// function $(val){
-//   return document.querySelector(val);
-// }
+var tela = new Tela();
+var ajax = new Ajax();
 
-// function s(val){
-//   return document.querySelectorAll(val);
-// }
-// $('.menu').addEventListener('click', function() {
-// 	$("#container").className = ( $("#container").className == 'active' )? '' : 'active';
-// 	$(".menu").className = ( $(".menu").className == 'menu menu-active' )? 'menu' : 'menu menu-active';
-// }, false);
+// Util para buscar elementos no DOM.
+function $(val){
+  return document.querySelectorAll(val);
+}
+
+window.addEventListener('load', function(){
+	iniciar();
+});
+
+function iniciar() {
+	var telaElem = $('#tela')[0];
+
+	telaElem.style.width = window.innerWidth + 'px';
+	telaElem.style.height = window.innerHeight + 'px';
+
+	tela.mudarPara('telaInicio', 1);
+}
