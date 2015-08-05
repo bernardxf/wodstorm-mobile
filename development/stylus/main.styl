@@ -184,10 +184,10 @@ button
 		content '\e60b'
 		display block
 		font-family icomoon
-		font-size 20px
+		font-size 14px
 		position absolute
-		top 2px
-		left -5px
+		top 6px
+		left 0px
 .novo
 	left auto
 	right 5px
@@ -195,8 +195,7 @@ button
 	&:before
 		content '\e601'
 		left auto
-		right -4px
-		top 3px
+		right 0px
 .sair
 	left auto
 	padding 0
@@ -595,22 +594,28 @@ ol
 				position relative
 			.buttons
 				float right
-				margin 4px 10px 0 0
-				button
-					background none
-					border 1px solid #666
-					border-radius 2px
+				margin 0 10px 0 0
+				a
 					color #666
-					height 20px
+					display block
+					height 25px
 					float right
-					font-size 12px
-					line-height 14px
-					margin 0 3px
-					width 50px
-					&:active
-						background-color #4B4B4B
-						border-color #4B4B4B
-						color #fff
+					line-height normal
+					margin-left 10px
+					position relative
+					width 25px
+					&:before
+						font-family icomoon
+						font-size 25px
+						height 25px
+						position absolute
+						top 0
+						right 0
+						width 25px
+					&.editar:before
+						content '\e609'
+					&.excluir:before
+						content '\e60c'
 			ul.configs
 				background-color #1E1E1E
 				float left
