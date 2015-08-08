@@ -172,6 +172,7 @@ button
 .voltar
 .novo
 .sair
+.delete
 	color #fff
 	display block
 	font-family TitilliumWeb-Light
@@ -189,6 +190,7 @@ button
 		top 6px
 		left 0px
 .novo
+.delete
 	left auto
 	right 5px
 	padding 0 15px 0 0
@@ -196,6 +198,8 @@ button
 		content '\e601'
 		left auto
 		right 0px
+.delete:before
+	content '\e60c'
 .sair
 	left auto
 	padding 0
@@ -357,7 +361,7 @@ ol
 		display inline-block
 		margin 0 auto
 		text-align center
-		width 280px
+		width 282px
 		button
 			background-color #bc3026
 			border none
@@ -406,7 +410,22 @@ ol
 		text-align left
 		margin 10px auto -5px
 		padding-left 10px
+		position relative
 		width 270px
+		.adicionar
+			display block
+			float right
+			height 20px
+			margin 0 10px 0 0
+			position relative
+			width 20px
+			&:before
+				content '\e600'
+				font-family icomoon
+				font-size 20px
+				position absolute
+				top 0
+				right 0
 	ul
 		background-color #1e1e1e
 		font-family TitilliumWeb-Regular
@@ -750,23 +769,40 @@ ol
 		padding-left 10px
 		position relative
 		width 270px
-		&:after
-			color #474747
-			content '\e60a'
-			font-family icomoon
-			font-size 45px
-			height 45px
-			position absolute
-			top -20px
-			right 10px
-			width 45px
+		.adicionar
+			display block
+			float right
+			height 20px
+			margin 0 10px 0 0
+			position relative
+			width 20px
+			&:before
+				content '\e600'
+				font-family icomoon
+				font-size 20px
+				position absolute
+				top 0
+				right 0
 	ul
 		background-color #1e1e1e
 		font-family TitilliumWeb-Regular
 		font-size 16px
+		height 155px
 		margin 0 auto
 		padding 10px
+		position relative
 		width 260px
+		&:before
+			color #2a2a2a
+			content '\e60a'
+			display block
+			font-family icomoon
+			font-size 90px
+			height 90px
+			position absolute
+			right 15px
+			top 40px
+			width 90px
 		li
 			border none
 			height auto
